@@ -1,0 +1,72 @@
+<head>
+  <title>
+    <h1>Survey<h1>
+  </title>
+</head>
+
+<body>
+  <div class="background">
+    <div class="blur"> </div>
+      <div class="content">
+        <div class="intro">
+          <h1 id="title"> FreeCodeCamp Survey Form </h1>
+          <p id="description">You have just completed one of the top courses. Tell the world how you feel about that!
+          </p>
+        </div>
+
+        <container id="newform">
+          <form id="survey-form" autocomplete="on">
+
+            <label for="name" id="name-label">Name</label><br>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            <br><br>
+            <label for="email" id="email-label">Enter your email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your e-address" required>
+            <br><br>
+            <label for="number" id="number-label">Number</label><br>
+            <input id="number" type="number" min="6000000000" max="9999999999" placeholder="Enter your contact number">
+            <br><br>
+            <label for="dropdown"> Choose your profession</label><br>
+            <select id="dropdown" name="profession">
+              <option value="click" selected>--select--</option>
+              <option value="teacher">Teacher</option>
+              <option value="Student">Student</option>
+              <option value="Professional">Professional</option>
+              <option value="Business">Business</option>
+              <option value="Other">Other</option>
+            </select>
+            <br><br>
+            <p id="courseyes">Which course(s) did you complete? </p>
+            <input type="radio" name="courses" id="front" value="front">
+            <label for="front">Front-end</label><br>
+            <input type="radio" name="courses" id="back" value="back">
+            <label for="back">Back-end</label><br>
+            <input type="radio" name="courses" id="comp" value="comp">
+            <label for="comp">Competitive Programming</label><br>
+            <input type="radio" name="courses" id="ds" value="ds">
+            <label for="ds">DS & Algo</label><br><br>
+
+            <!--  checkboxes     -->
+            <p id="courseyes">Which of our social media handles you are currently following? </p>
+            <input type="checkbox" value="Twitter" id="Tw">
+            <label for="Tw">Twitter</label><br>
+            <input type="checkbox" value="Facebook" id="Fb">
+            <label for="Fb">Facebook</label><br>
+            <input type="checkbox" value="Instagram" id="Ig">
+            <label for="Ig">Instagram</label><br>
+            <input type="checkbox" value="LinkedIn" id="li">
+            <label for="li">LinkedIn</label><br><br>
+
+
+            <p id="newta"> Additional Comments</p>
+            <textarea id="textarea"></textarea>
+
+            <button id="submit"><span>Submit</span></button>
+
+
+          </form>
+        </container>
+
+      </div>
+    </div>
+</body>

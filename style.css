@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+}
+
+body {
+  height: 100%;
+}
+
+.background {
+  background-image: url("https://i.pinimg.com/564x/a0/29/58/a029587329b44f5dd1e3a02a80b51d40.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(50px);
+  height: 100%;
+  z-index: -1;
+}
+
+.content {
+  max-width: 700px;
+  margin: auto;
+  text-shadow: 1px 1px 2px black;
+}
+
+#title {
+  font-size: 42px;
+  margin-left: 26px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.intro {
+  color: white;
+  padding: 30px;
+}
+
+#title, #description {
+  margin-top: 9px;
+  padding: 5px;
+  line-height: 25px;
+}
+
+#description {
+  text-align: center;
+  font-size: 18px;
+  margin-top: -22px;
+}
+
+#newform {
+  margin-top: 30px;
+  display: block;
+  margin: auto;
+  padding: 15px;
+  line-height: 50px;
+  background-color: hsl(0, 0%, 0%, 0.75);
+  box-shadow: 5px 5px 8px;
+  border-radius: 8px;
+}
+
+#survey-form {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding: 50px;
+}
+
+#name {
+  width: 560px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+#number {
+  width: 560px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+#email {
+  width: 560px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+#dropdown {
+  height: 40px;
+  width: 565px;
+  border-radius: 8px;
+}
+
+#courseyes {
+  margin-bottom: -5px;
+}
+
+#newta {
+  margin-bottom: 5px;
+}
+
+#textarea {
+  height: 60px;
+  width: 560px;
+  border-radius: 8px;
+  margin-bottom: 60px;
+}
+
+#submit {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  border-radius: 15px;
+  width: 150px;
+  height: 55px;
+  box-shadow: 5px 7px 15px;
+  display: block;
+  margin: auto;
+  border: none;
+  font-weight: 530;
+}
+
+#submit span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+#submit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: .5s;
+}
+
+#submit:hover span {
+  padding-right: 25px;
+}
+
+#submit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
